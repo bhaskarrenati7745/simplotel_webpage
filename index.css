@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alkatra&family=Noto+Sans:wght@200&family=Roboto:wght@300;400&family=Sassy+Frass&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    list-style: none;
+}
+
+.navbar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+.nav-list {
+    display: flex;
+    justify-content: center;
+}
+.nav-item {
+    margin: 0 20px;
+}
+.nav-item a {
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+}
+.nav-icons a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    color: black;
+    float: right;
+}
+.bg_gradient{
+    background: linear-gradient(90deg, #f980ac, #efe266); 
+    
+}
+.bg_image{
+    background-image: url('./images/img1.jpg');
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 600px;
+    position: relative;
+}
+.gradient_box{
+    background-color: rgba(249, 128, 172, 0.5);
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(249, 245, 245);
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    
+}
+.gradient_title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.center{
+    color: whitesmoke;
+    margin: 100px auto 20px auto;
+    text-align: center;
+
+}
+.food_items_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.food_items{
+    height: 325px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background-color: white;
+    border-radius: 0% 20% 0% 20%;
+    -webkit-border-radius: 0% 20% 0% 20%;
+    -moz-border-radius: 0% 20% 0% 20%;
+    -ms-border-radius: 0% 20% 0% 20%;
+    -o-border-radius: 0% 20% 0% 20%;
+}
+
+.food_image{
+    height: 150px;
+    width: 200px;
+    border-radius: 0% 20% 0% 0%;
+    -webkit-border-radius: 0% 20% 0% 0%;
+    -moz-border-radius: 0% 20% 0% 0%;
+    -ms-border-radius: 0% 20% 0% 0%;
+    -o-border-radius: 0% 20% 0% 0%;
+    margin-bottom: 20px;
+}
+.food_title{
+    font-size: 1.2rem;
+    
+}
+.food_desc{
+    font-size: 0.8rem;
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.order_btn{
+   background-color: rgba(105, 103, 103, 0.5);
+   color: #020202;
+   padding: 10px 20px;
+   width: 150px;
+   border-radius: 20px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   -ms-border-radius: 20px;
+   -o-border-radius: 20px;
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: 20px;
+   
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 16px;
+        
+    }
+
+    .nav-list {
+        margin-top: 20px;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+        
+    }
+
+    .nav-icons {
+        margin-top: 10px;
+    }
+    .food_items_container{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
